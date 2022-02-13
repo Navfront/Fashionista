@@ -1,0 +1,67 @@
+.daily-fashion {
+  margin-top: 31px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(to top, transparent 45px, black 45px, #000000 100%);
+
+  h2 {
+    margin: 0 0 24px 0;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 51px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: white;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  p {
+    display: flex;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: white;
+
+    &::before {
+      content: "";
+      width: 21px;
+      height: 21px;
+      margin-right: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../../img/icons/play-icon.svg");
+    }
+  }
+}
+
+.daily-fashion__wrapper {
+  display: flex;
+}
+
+.daily-fashion__text-column {
+  flex-grow: 1;
+  width: 273px;
+  padding: 75px 55px 73px 110px;
+}
+
+.daily-fashion__img-column {
+  display: flex;
+  padding: 46px 110px 0 0;
+}

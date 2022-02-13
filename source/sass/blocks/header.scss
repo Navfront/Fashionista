@@ -1,0 +1,124 @@
+.header-nav__wrapper {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+
+.header-nav__logo {
+  display: flex;
+  position: absolute;
+  margin-left: 450px;
+  margin-top: -12px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.site-navigation__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.site-navigation__item:nth-child(5n-4),
+.site-navigation__item:nth-child(5n-3),
+.site-navigation__item:nth-child(5n-2) {
+  margin-right: 57px;
+}
+
+.site-navigation__item:nth-child(5n-1) {
+  // ЭТА ХРЕНЬ ДВИГАЕТ ВСЕ КНОПКИ!
+  margin-right: 0;
+  margin-left: auto;
+  width: 50%;
+}
+
+.site-navigation__item:nth-child(5n) {
+  margin-right: 0;
+  margin-left: 57px;
+  width: auto;
+}
+
+.site-navigation__link {
+  position: relative;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
+  &:hover,
+  &:focus {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      left: 0;
+      bottom: -2px;
+      border-bottom: 1px solid black;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 50px;
+  max-width: 50px;
+}
+
+.socials__item {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.socials__link {
+  width: 25px;
+  height: 25px;
+}
+
+.social__link--instagram {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-image: url("../img/insta.svg");
+  background-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,102 @@
+.main-article__header {
+  padding-top: 103px;
+  padding-bottom: 104px;
+  margin-bottom: 19px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-image: url(../../img/main-header/alyssa-strohmann-TS--uNw-JqE-unsplash.jpg);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/main-header/alyssa-strohmann-TS--uNw-JqE-unsplash@2x.jpg);
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url(../../img/main-header/alyssa-strohmann-TS--uNw-JqE-unsplash@3x.jpg);
+  }
+}
+
+.main-header__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px 82px 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &::before {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    content: "";
+    width: 95px;
+    height: 93px;
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  &::after {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    content: "";
+    width: 95px;
+    height: 93px;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+  }
+}
+
+.main-header__title {
+  margin: 52px 0 35px 0;
+  max-width: 860px;
+  font-family: "Cormorant", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main-header__list {
+  width: 100%;
+  margin: 0 105px 0 0;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+.main-header__list-row {
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.main-header__term {
+  width: 50%;
+  margin-right: 7px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.main-header__definition {
+  width: 50%;
+  margin-left: 7px;
+}
+
+.main-article__lead {
+  padding-top: 38px;
+  font-family: "Cormorant", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  text-align: justify;
+}
+
+.main-article p {
+  width: 705px;
+  margin: 0 auto;
+}

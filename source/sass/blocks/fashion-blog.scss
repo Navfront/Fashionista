@@ -1,0 +1,54 @@
+.fasion-blog {
+  width: 705px;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  figure {
+    margin: 0;
+  }
+
+  figcaption {
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.5;
+  }
+
+  h2 {
+    margin: 23px 0 15px;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 37px;
+  }
+
+  p {
+    padding-bottom: 28px;
+    letter-spacing: 0.01em;
+    text-align: justify;
+
+    b {
+      font-weight: 600;
+    }
+
+    a {
+      font-size: 18px;
+      line-height: 27px;
+      color: #760801;
+
+      &:hover,
+      &:focus {
+        color: #000000;
+      }
+
+      &:active {
+        color: #999999;
+      }
+    }
+  }
+
+  &:last-child,
+  &:nth-last-child(4) {
+    border-bottom: none;
+  }
+}

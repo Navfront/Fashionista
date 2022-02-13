@@ -1,0 +1,55 @@
+.sales {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 5px;
+}
+
+.sales__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 530px;
+}
+
+.sales__title {
+  width: 705px;
+  padding: 22px 40px 20px 40px;
+  margin: 0 auto;
+  font-family: "Cormorant", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: white;
+
+  span {
+    font-size: 50px;
+  }
+}
+
+.sales__link {
+  padding: 15px 35px 15px 35px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.sales__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 110px;
+  margin: 0 auto;
+}
